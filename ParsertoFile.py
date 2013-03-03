@@ -23,7 +23,7 @@ def Parser(textfile,top_x):
             del FileWordsC[word]
 
 
-    sillyfile = open(textfile+".Parsed",'w')
+    sillyfile = open(textfile+"_Parsed.txt",'w')
     sillystring = FileWordsC.most_common(top_x)
     
     for word,frequency in sillystring:
